@@ -1,0 +1,1 @@
+select if(grade<8,NULL,name),grade,marks from students s inner join grades g where s.marks between g.min_mark and g.max_mark order by g.grade desc, s.name
